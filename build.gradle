@@ -1,0 +1,24 @@
+version '1.0-SNAPSHOT'
+
+apply plugin: 'java'
+
+sourceCompatibility = 1.5
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.seleniumhq.selenium:selenium-java:2.52.0'
+    testCompile 'org.seleniumhq.selenium:selenium-chrome-driver:2.23.0'
+}
+
+
+sourceSets {
+    test {
+        java {
+            srcDir 'src'
+        }
+    }
+}
