@@ -20,7 +20,7 @@ public class Main
 
         try
         {
-			// reading the configuration file
+            // reading the configuration file
             input = new FileInputStream("config.properties");
 
             // load a properties file
